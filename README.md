@@ -2,7 +2,7 @@
     <img src="https://i.ibb.co/d2vNG5w/logo-removebg-preview.png" alt="logo do projeto doesangue" width="150px" />
 </div>
 
-<div align="center" style="dusplay: inline-flex;">
+<div align="center" style="display: inline-flex;">
 
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 
