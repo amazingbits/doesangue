@@ -50,25 +50,25 @@ Trata-se de um sistema simples de cadastro de doadores de sangue. O cadastro é 
 #### Como testar
 
 1. Clone o repositório através do comando
-```
+```bash
 git clone https://github.com/amazingbits/doesangue
 ```
 
 2. Ao abrir o projeto no IDE da sua preferência e com o terminal na pasta raíz, execute o seguinte comando para instalar as dependências do projeto:
 
-```
+```bash
 npm install
 ```
 
 3. Após isso, execute o seguinte comando para criar um contêiner com o banco de dados (além de um PHPMyadmin para gerenciamento no navegador):
 
-```
+```bash
 docker-compose up -d
 ```
 
 4. No `PHPMyadmin`, acesse a aba `SQL`, cole e execute a seguinte query:
 
-```
+```sql
 USE db_doesangue;
 
 CREATE TABLE IF NOT EXISTS doador(
