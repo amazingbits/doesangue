@@ -1,4 +1,16 @@
-## Minha versão do projeto Doe Sangue desenvolvido pela @Rocketseat
+<div align="center">
+    <img src="https://i.ibb.co/d2vNG5w/logo-removebg-preview.png" alt="logo do projeto doesangue" width="150px" />
+</div>
+
+<div align="center">
+    ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+
+    ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white)
+
+    ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+
+    ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+</div>
 
 #### Descrição
 
@@ -11,17 +23,69 @@ Trata-se de um sistema simples de cadastro de doadores de sangue. O cadastro é 
 - Javascript
 - NodeJS
 - Mysql
+- Template engine Nunjucks
 
-#### Observações para testar
+#### Prints do Projeto
 
-- Ter node e npm instalados
-- Instalar o express 'npm install express'
-- Instalar o nunjucks 'npm install nunjucks'
-- Instalar o mysql2 'npm install --save mysql2'
-- Instalar um servidor Mysql
-- Executar a query que está no arquivo "bancodedados.sql"
+`página inicial`
+<div align="center">
+    <img src="https://i.ibb.co/FYhTjXz/pagina-projeto.jpg" alt="print do projeto" />
+</div>
+<br>
+
+`bloco para cadastrar doador`
+<div align="center">
+    <img src="https://i.ibb.co/c2gRSDY/formulario.jpg" alt="print do projeto" />
+</div>
+<br>
+
+`página 404`
+<div align="center">
+    <img src="https://i.ibb.co/S0VgfWj/404.jpg" alt="print do projeto" />
+</div>
+<br>
+
+#### Pré-requisitos
+
+- NodeJS na versão 16 ou superior
+- Docker
+
+#### Como testar
+
+1. Clone o repositório através do comando
+```
+git clone https://github.com/amazingbits/doesangue
+```
+
+2. Ao abrir o projeto no IDE da sua preferência e com o terminal na pasta raíz, execute o seguinte comando para instalar as dependências do projeto:
+
+```
+npm install
+```
+
+3. Após isso, execute o seguinte comando para criar um contêiner com o banco de dados (além de um PHPMyadmin para gerenciamento no navegador):
+
+```
+docker-compose up -d
+```
+
+4. No `PHPMyadmin`, acesse a aba `SQL`, cole e execute a seguinte query:
+
+```
+USE db_doesangue;
+
+CREATE TABLE IF NOT EXISTS doador(
+id INT NOT NULL AUTO_INCREMENT,
+nome VARCHAR(255),
+email VARCHAR(255),
+tipo_sanguineo VARCHAR(4),
+PRIMARY KEY(id));
+```
+
+Após isso, no terminal do seu projeto, execute `npm run test` para rodar o projeto e ser possível acessá-lo no navegador através do link `http://localhost:3000`
 
 #### Diário de bordo
+`diário de bordo da época em que o prjeto foi feito`
 
 17/02/2020
 
